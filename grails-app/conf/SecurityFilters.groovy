@@ -1,3 +1,5 @@
+import javax.servlet.http.HttpServletResponse
+
 class SecurityFilters {
 
     def filters = {
@@ -6,7 +8,8 @@ class SecurityFilters {
                 def allowedActions = ["logIn", "loggedIn", "logout"]
                 if (!session.user && !allowedActions.contains(actionName)) {
                     //redirect(controller: "user", action: "login")
-                    return true //TODO leave false later
+                    response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Not authorized")
+                    return false
                 }
             }
         }

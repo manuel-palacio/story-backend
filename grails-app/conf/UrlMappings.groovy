@@ -9,10 +9,7 @@ class UrlMappings {
 
         "/auth/$action"(controller: "login", parseRequest: true)
 
-
         "/resources/stories"(resources:"Story")
-
-
 
         "/"(view:"/index")
 

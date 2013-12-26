@@ -36,7 +36,7 @@ class StoryController extends RestfulController<Story> {
         }
     }
 
-    def index = {
+    def index() {
         respond Story.list()
     }
 }

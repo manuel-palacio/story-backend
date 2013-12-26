@@ -1,9 +1,5 @@
 package trellolitegrails
 
-import groovy.transform.ToString
-import org.bson.types.ObjectId
-
-@ToString
 class Story {
 
     static constraints = {
@@ -18,4 +14,5 @@ class Story {
     String reporter
     String assignee
     String description
+    Date created
 }

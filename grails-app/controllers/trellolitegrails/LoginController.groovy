@@ -2,17 +2,17 @@ package trellolitegrails
 
 class LoginController {
 
-    static allowedMethods = [loggedIn: 'GET', check: 'POST']
+    static allowedMethods = [loggedIn: 'GET', logIn: 'POST', logout: 'POST']
 
-    def loggedIn = {
+    def loggedIn() {
         if (session.user && session.user == "admin") {
-            render "1"
+            render "true"
         } else {
-            render "0"
+            render "false"
         }
     }
 
-    def logIn = {
+    def logIn () {
         def jsonObj = request.JSON
         def userName = jsonObj.credentials.username
         def password = jsonObj.credentials.password
@@ -24,7 +24,7 @@ class LoginController {
         }
     }
 
-    def logout = {
+    def logout () {
         session.invalidate()
         render "Over and out"
     }
