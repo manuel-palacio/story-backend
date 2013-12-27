@@ -43,7 +43,7 @@ environments {
                 port = 10040
                 username = "cloudbees"
                 password = "hFa5sSA3XB0qB9gNzfQ"
-                databaseName = "stories"
+                databaseName = "hFa5sSA3XB0qB9gNzfQ"
             }
         }
         dataSource {
