@@ -14,5 +14,4 @@ class Story {
     String reporter
     String assignee
     String description
-    Date created
 }

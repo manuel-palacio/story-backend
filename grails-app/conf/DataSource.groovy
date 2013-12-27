@@ -1,12 +1,4 @@
-grails {
-    mongo {
-        host = "localhost"
-        port = 27017
-        username = ""
-        password = ""
-        databaseName = "story"
-    }
-}
+
 
 dataSource {
     pooled = true
@@ -24,6 +16,15 @@ hibernate {
 // environment specific settings
 environments {
     development {
+        grails {
+            mongo {
+                host = "localhost"
+                port = 27017
+                username = ""
+                password = ""
+                databaseName = "stories"
+            }
+        }
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
@@ -36,6 +37,15 @@ environments {
         }
     }
     production {
+        grails {
+            mongo {
+                host = "linus.mongohq.com"
+                port = 10040
+                username = "cloudbees"
+                password = "hFa5sSA3XB0qB9gNzfQ"
+                databaseName = "stories"
+            }
+        }
         dataSource {
             dbCreate = "update"
             url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
