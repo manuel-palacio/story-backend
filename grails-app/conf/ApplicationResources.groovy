@@ -1,5 +1,5 @@
 modules = {
-    application {
+   /* application {
         resource url:'js/application.js'
-    }
+    }*/
 }
