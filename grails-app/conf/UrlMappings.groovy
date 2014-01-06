@@ -11,7 +11,7 @@ class UrlMappings {
 
         "/resources/stories"(resources:"Story")
 
-        "/"(resource:"/index.html")
+        "/"(resource:"/index")
 
         "500"(view: "error")
 
