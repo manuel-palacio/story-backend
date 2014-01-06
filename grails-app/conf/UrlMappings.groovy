@@ -13,5 +13,7 @@ class UrlMappings {
 
         "/"(resource:"/index")
 
+        "500"(view: "error")
+
 	}
 }
