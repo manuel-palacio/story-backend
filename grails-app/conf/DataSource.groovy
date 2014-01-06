@@ -41,8 +41,8 @@ environments {
             mongo {
                 host = "linus.mongohq.com"
                 port = 10040
-                username = "cloudbees:7f62f4914292cc25bc0885f1a281ea29"
-                password = ""
+                username = "cloudbees"
+                password = "7f62f4914292cc25bc0885f1a281ea29"
                 databaseName = "hFa5sSA3XB0qB9gNzfQ"
             }
         }
