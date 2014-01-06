@@ -41,7 +41,7 @@ environments {
             mongo {
                 host = "linus.mongohq.com"
                 port = 10040
-                username = ""
+                username = "palace"
                 password = ""
                 databaseName = "hFa5sSA3XB0qB9gNzfQ"
             }
