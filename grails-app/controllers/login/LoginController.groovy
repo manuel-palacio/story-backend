@@ -1,4 +1,4 @@
-package trellolitegrails
+package login
 
 class LoginController {
 

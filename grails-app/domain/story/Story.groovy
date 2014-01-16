@@ -1,4 +1,4 @@
-package trellolitegrails
+package story
 
 class Story {
 

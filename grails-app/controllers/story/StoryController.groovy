@@ -1,4 +1,4 @@
-package trellolitegrails
+package story
 
 import grails.rest.RestfulController
 import grails.transaction.Transactional

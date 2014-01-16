@@ -1,6 +1,7 @@
 package trellolitegrails
 
 import grails.test.mixin.TestFor
+import login.LoginController
 import spock.lang.Specification
 
 /**
